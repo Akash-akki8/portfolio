@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Powered Animal Analysis System</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    /* Navigation */
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      color: #0ea5e9;
+    }
+
+    /* Hero Section */
+
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      color: #cbd5e1;
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
+
+    .hero-text .tag {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      padding: 12px 22px;
+      border-radius: 50px;
+      font-weight: 500;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Section */
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    .section p {
+      color: #cbd5e1;
+      margin-bottom: 15px;
+    }
+
+    /* Features */
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 18px;
+      transition: 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+
+    /* Tech Stack */
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .tech {
+      background: #1e293b;
+      padding: 12px 20px;
+      border-radius: 30px;
+      color: #38bdf8;
+      font-weight: 500;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    /* Footer */
+
+    .footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: #94a3b8;
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+
+    @media(max-width:768px) {
+
+      .hero-text h1 {
+        font-size: 34px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a href="../index.html" class="back-btn">← Back to Portfolio</a>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+      <div class="hero-text">
+        <h1>AI Powered Animal Breed, Disease & Posture Analysis System</h1>
+
+        <p>
+          This project is an AI-based animal monitoring system developed to identify animal breeds, detect possible
+          diseases, and analyze posture using computer vision and deep learning technologies.
+        </p>
+
+        <p>
+          The system helps improve animal healthcare by providing quick and accurate analysis from uploaded images. It
+          supports farmers, veterinarians, and animal care organizations with intelligent monitoring and early disease
+          detection.
+        </p>
+
+        <span class="tag">AI + Computer Vision + Deep Learning</span>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop"
+          alt="Animal AI Analysis">
+      </div>
+
+    </section>
+
+    <!-- About Project -->
+
+    <section class="section">
+
+      <h2>Project Overview</h2>
+
+      <p>
+        The AI Powered Animal Analysis System combines machine learning and image processing techniques to analyze
+        animal images in real time. The model is trained to recognize different animal breeds, identify visible health
+        issues, and study body posture patterns.
+      </p>
+
+      <p>
+        By using advanced AI algorithms, the system can assist in early disease detection and help monitor animal health
+        conditions more efficiently. The project focuses on creating a smart, user-friendly, and responsive web-based
+        platform.
+      </p>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="section">
+
+      <h2>Key Features</h2>
+
+      <div class="features">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop"
+            alt="Breed Classification">
+
+          <h3>Breed Classification</h3>
+
+          <p>
+            Detects and classifies animal breeds accurately using deep learning image recognition models.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
+            alt="Disease Detection">
+
+          <h3>Disease Detection</h3>
+
+          <p>
+            Identifies visual symptoms and possible health abnormalities from uploaded animal images.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1200&auto=format&fit=crop"
+            alt="Posture Analysis">
+
+          <h3>Posture Analysis</h3>
+
+          <p>
+            Analyzes animal posture to detect discomfort, movement issues, or signs of injury.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Tech Stack -->
+
+    <section class="section">
+
+      <h2>Technologies Used</h2>
+
+      <div class="tech-stack">
+
+        <div class="tech">Python</div>
+        <div class="tech">OpenCV</div>
+        <div class="tech">TensorFlow</div>
+        <div class="tech">PyTorch</div>
+        <div class="tech">Flask</div>
+        <div class="tech">Machine Learning</div>
+        <div class="tech">Deep Learning</div>
+        <div class="tech">HTML</div>
+        <div class="tech">CSS</div>
+        <div class="tech">JavaScript</div>
+
+      </div>
+
+    </section>
+
+    <!-- Future Scope -->
+
+    <section class="section">
+
+      <h2>Future Enhancements</h2>
+
+      <p>
+        Future improvements include real-time video monitoring, mobile application integration, cloud-based analytics,
+        and AI-powered veterinary recommendations for advanced animal healthcare support.
+      </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      © 2026 Chandra Akash | AI & Full Stack Developer
+    </div>
+
+  </div>
+
+</body>
+
+</html>
